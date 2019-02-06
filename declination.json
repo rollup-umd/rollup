@@ -2,5 +2,18 @@
   "globals": {
   },
   "external": [
+    "rollup-plugin-babel",
+    "rollup-plugin-cleanup",
+    "rollup-plugin-commonjs",
+    "rollup-plugin-inject",
+    "rollup-plugin-json",
+    "rollup-plugin-node-builtins",
+    "rollup-plugin-node-resolve",
+    "rollup-plugin-replace",
+    "rollup-plugin-terser",
+    "rollup-plugin-visualizer",
+    "rollup-watch",
+    "fs",
+    "path"
   ]
 }
