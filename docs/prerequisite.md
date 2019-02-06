@@ -1,5 +1,5 @@
-If you don't have them, install all the `peerDependencies` in your project:
+If you don't have it, install `rollup` in your project:
 
 ```bash
-$ $PACKAGE_PEERS
+$ npm install rollup --save-dev
 ```
