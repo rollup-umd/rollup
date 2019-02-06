@@ -312,24 +312,5 @@
       "<rootDir>/internals/testing/test-bundler.js"
     ]
   },
-  "contributors": [],
-  "transitive": {
-    "name": "rollup",
-    "scope": "rollup-umd",
-    "scopedName": "@rollup-umd/rollup",
-    "jsnext:main": "dist/@rollup-umd/rollup.esm.js",
-    "module": "dist/@rollup-umd/rollup.esm.js",
-    "homepage": "https://rollup-umd.github.io/rollup",
-    "repository": {
-      "type": "git",
-      "url": "https://github.com/rollup-umd/rollup.git"
-    },
-    "bugs": {
-      "url": "https://github.com/rollup-umd/rollup/issues"
-    },
-    "publishConfig": {
-      "access": "public",
-      "registry": "https://registry.npmjs.org"
-    }
-  }
+  "contributors": []
 }
