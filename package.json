@@ -1,6 +1,6 @@
 {
   "name": "@yeutech/rollup",
-  "version": "0.0.0-development",
+  "version": "1.0.0",
   "description": "rollup configuration for rollup-umd",
   "main": "lib/index.js",
   "jsnext:main": "dist/@yeutech/rollup.esm.js",
@@ -38,7 +38,8 @@
     "prestyleguide": "npm run jsdoc",
     "styleguide": "styleguidist server",
     "prestyleguide:build": "npm run jsdoc",
-    "styleguide:build": "styleguidist build"
+    "styleguide:build": "styleguidist build",
+    "postinstall": "node -e \"console.log('\\u001b[31m@yeutech/rollup is deprecated, use @rollup-umd/rollup instead.')\" || exit 0"
   },
   "repository": {
     "type": "git",
