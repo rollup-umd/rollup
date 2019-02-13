@@ -47,15 +47,15 @@ const defaultOptions = {
  * @paran {array} [options.formats=['umd', 'cjs', 'es']] - output formats
  * @param {string} [options.pkgPath=package.json] - set the package.json path
  * @param {string} [options.declinationPath=declination.json] - set the declination.json path
- * @param {string} [options.multipleChunk=false] - You must set output.dir instead of output.file when generating multiple chunks, this option will do it and keep only es format
+ * @param {boolean} [options.multipleChunk=false] - You must set output.dir instead of output.file when generating multiple chunks, this option will do it and keep only es format
  * @param {string} [options.nodeResolveOptions={}] - rollup-plugin-node-resolve options (See https://github.com/rollup/rollup-plugin-node-resolve)
- * @param {string} [options.commonjsOptions={}] - rollup-plugin-commonjs options (See https://github.com/rollup/rollup-plugin-commonjs)
- * @param {string} [options.replaceOptions={}] - rollup-plugin-replace options (See https://github.com/rollup/rollup-plugin-replace)
- * @param {string} [options.injectOptions={}] - rollup-plugin-inject options (See https://github.com/rollup/rollup-plugin-inject)
- * @param {string} [options.jsonOptions={}] - rollup-plugin-json options (See https://github.com/rollup/rollup-plugin-json)
- * @param {string} [options.babelOptions={}] - rollup-plugin-babel options (See https://github.com/rollup/rollup-plugin-babel)
- * @param {string} [options.cleanupOptions={}] - rollup-plugin-cleanup options (See https://github.com/aMarCruz/rollup-plugin-cleanup)
- * @param {string} [options.pkgFormatsPriority={}] - Give pkg.formats priority if it exist in package.json
+ * @param {object} [options.commonjsOptions={}] - rollup-plugin-commonjs options (See https://github.com/rollup/rollup-plugin-commonjs)
+ * @param {object} [options.replaceOptions={}] - rollup-plugin-replace options (See https://github.com/rollup/rollup-plugin-replace)
+ * @param {object} [options.injectOptions={}] - rollup-plugin-inject options (See https://github.com/rollup/rollup-plugin-inject)
+ * @param {object} [options.jsonOptions={}] - rollup-plugin-json options (See https://github.com/rollup/rollup-plugin-json)
+ * @param {object} [options.babelOptions={}] - rollup-plugin-babel options (See https://github.com/rollup/rollup-plugin-babel)
+ * @param {object} [options.cleanupOptions={}] - rollup-plugin-cleanup options (See https://github.com/aMarCruz/rollup-plugin-cleanup)
+ * @param {object} [options.pkgFormatsPriority={}] - Give pkg.formats priority if it exist in package.json (user can use pkg.formats = ['umd'] to specify the output formats)
  * @example
  * const { createConfig } = require('@rollup-umd/rollup');
  * const options = {}; // override any options here
