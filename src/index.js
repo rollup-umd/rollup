@@ -74,6 +74,7 @@ function createConfig(options = {}) {
   };
 
   const formats = opts.pkgFormatsPriority && pkg.formats && !pkg.formats.length ? pkg.formats : opts.formats;
+  const { namedExports, ...commonjsOptions } = opts.commonjsOptions;
 
   const processShim = '\0process-shim';
   const prod = process.env.PRODUCTION;
@@ -135,7 +136,12 @@ function createConfig(options = {}) {
     }),
     commonjs({
       include: 'node_modules/**',
-      ...opts.commonjsOptions,
+      namedExports: {
+        react: ['cloneElement', 'createElement', 'PropTypes', 'Children', 'Component'],
+        'react-is': ['isElement', 'isValidElementType', 'ForwardRef'],
+        ...namedExports,
+      },
+      ...commonjsOptions,
     }),
     replace({
       'process.env.NODE_ENV': JSON.stringify(prod ? 'production' : 'development'),
