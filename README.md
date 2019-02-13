@@ -7,7 +7,7 @@
 [![NPM total downloads](https://img.shields.io/npm/dt/@rollup-umd/rollup.svg?style=flat)](https://npmjs.org/package/@rollup-umd/rollup)
 [![npm Version](https://img.shields.io/node/v/@rollup-umd/rollup.svg?style=flat)](https://www.npmjs.com/package/@rollup-umd/rollup)
 [![Module formats](https://img.shields.io/badge/module%20formats-umd%2C%20cjs%2C%20esm-green.svg?style=flat)](https://www.npmjs.com/package/@rollup-umd/rollup)
-[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=com.github.rollup-umd.rollup&metric=coverage)](https://sonarcloud.io/dashboard?id=com.github.rollup-umd.rollup) [![Quality gate status](https://sonarcloud.io/api/project_badges/measure?project=com.github.rollup-umd.rollup&metric=alert_status)](https://sonarcloud.io/dashboard?id=com.github.rollup-umd.rollup)
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=com.github.rollup-umd.rollup&metric=coverage)](https://sonarcloud.io/dashboard?id=com.github.rollup-umd.rollup) [![Quality gate status](https://sonarcloud.io/api/project_badges/measure?project=com.github.rollup-umd.rollup&metric=alert_status)](https://sonarcloud.io/dashboard?id=com.github.rollup-umd.rollup) [![Greenkeeper badge](https://badges.greenkeeper.io/rollup-umd/rollup.svg)](https://greenkeeper.io/)
 
 
 rollup configuration for rollup-umd
