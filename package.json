@@ -180,7 +180,7 @@
     "jest-sonar-reporter": "^2.0.0",
     "lint-staged": "^8.1.1",
     "pre-commit": "^1.2.2",
-    "react-styleguidist": "^8.0.6",
+    "react-styleguidist": "^9.0.0",
     "rollup": "^1.1.2",
     "semantic-release": "^15.13.3",
     "toctoc": "^0.3.2",
