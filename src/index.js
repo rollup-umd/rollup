@@ -169,7 +169,7 @@ function createConfig(options = {}) {
     input: 'src/index.js',
     external,
     output: o,
-    plugins: prod ? plugins.concat([terser(), visualizer({ filename: './bundle-stats.html' })]) : plugins,
+    plugins: prod ? plugins.concat((o.format === 'es' ? [] : [terser()]).concat([visualizer({ filename: './bundle-stats.html' })])) : plugins,
   }));
 }
 
