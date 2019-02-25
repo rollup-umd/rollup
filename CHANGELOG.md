@@ -1,3 +1,11 @@
+## [1.0.4](https://github.com/rollup-umd/rollup/compare/v1.0.3...v1.0.4) (2019-02-25)
+
+
+### Bug Fixes
+
+* **dependencies:** upgrade all dependencies ([b39ad22](https://github.com/rollup-umd/rollup/commit/b39ad22))
+* **esm:** We do not compress esm module with terser anymore ([c5daa80](https://github.com/rollup-umd/rollup/commit/c5daa80))
+
 ## [1.0.3](https://github.com/rollup-umd/rollup/compare/v1.0.2...v1.0.3) (2019-02-13)
 
 
