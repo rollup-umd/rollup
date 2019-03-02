@@ -137,7 +137,7 @@ function createConfig(options = {}) {
     commonjs({
       include: 'node_modules/**',
       namedExports: {
-        react: ['cloneElement', 'createElement', 'PropTypes', 'Children', 'Component'],
+        react: ['cloneElement', 'createElement', 'PropTypes', 'Children', 'Component', 'createContext'],
         'react-is': ['isElement', 'isValidElementType', 'ForwardRef'],
         ...namedExports,
       },
