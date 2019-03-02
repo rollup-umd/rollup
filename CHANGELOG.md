@@ -1,3 +1,10 @@
+## [1.0.6](https://github.com/rollup-umd/rollup/compare/v1.0.5...v1.0.6) (2019-03-02)
+
+
+### Bug Fixes
+
+* **namedExports:** filling the react dependency list with more named exports ([237dfd5](https://github.com/rollup-umd/rollup/commit/237dfd5))
+
 ## [1.0.5](https://github.com/rollup-umd/rollup/compare/v1.0.4...v1.0.5) (2019-03-02)
 
 
