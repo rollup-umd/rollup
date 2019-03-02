@@ -81,7 +81,7 @@ function createConfig(options = {}) {
   const mode = prod ? 'production' : 'development';
   const { external, globals } = declination;
 
-  console.log(`Creating ${mode} bundle...`);
+  console.log(`Creating ${mode} bundle...`); // eslint-disable-line no-console
 
   let output = prod ? [
     {
@@ -158,7 +158,7 @@ function createConfig(options = {}) {
         'react-is': [
           'isElement',
           'isValidElementType',
-          'ForwardRef'
+          'ForwardRef',
         ],
         ...namedExports,
       },
