@@ -121,11 +121,15 @@ function createConfig(options = {}) {
     // which includes a shim containing just the parts the bundle needs.
     {
       resolveId(importee) {
-        if (importee === processShim) return importee;
+        if (importee === processShim) {
+          return importee;
+        }
         return null;
       },
       load(id) {
-        if (id === processShim) return 'export default { argv: [], env: {} }';
+        if (id === processShim) {
+          return 'export default { argv: [], env: {} }';
+        }
         return null;
       },
     },
@@ -137,8 +141,25 @@ function createConfig(options = {}) {
     commonjs({
       include: 'node_modules/**',
       namedExports: {
-        react: ['cloneElement', 'createElement', 'PropTypes', 'Children', 'Component', 'createContext'],
-        'react-is': ['isElement', 'isValidElementType', 'ForwardRef'],
+        react: [
+          'cloneElement',
+          'createElement',
+          'PropTypes',
+          'Children',
+          'Component',
+          'createContext',
+          'PureComponent',
+          'createFactory',
+          'forwardRef',
+          'lazy',
+          'createRef',
+          'memo',
+        ],
+        'react-is': [
+          'isElement',
+          'isValidElementType',
+          'ForwardRef'
+        ],
         ...namedExports,
       },
       ...commonjsOptions,
