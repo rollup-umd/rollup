@@ -1,3 +1,10 @@
+## [1.0.5](https://github.com/rollup-umd/rollup/compare/v1.0.4...v1.0.5) (2019-03-02)
+
+
+### Bug Fixes
+
+* **dependencies:** upgrade all dependencies ([19897b4](https://github.com/rollup-umd/rollup/commit/19897b4))
+
 ## [1.0.4](https://github.com/rollup-umd/rollup/compare/v1.0.3...v1.0.4) (2019-02-25)
 
 
