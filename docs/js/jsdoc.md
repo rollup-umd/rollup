@@ -9,15 +9,23 @@ create rollup configuration for all rollup-umd projects
 -   `options` **[object][1]** options object for reconfiguration (optional, default `{}`)
     -   `options.pkgPath` **[string][2]** set the package.json path (optional, default `package.json`)
     -   `options.declinationPath` **[string][2]** set the declination.json path (optional, default `declination.json`)
-    -   `options.multipleChunk` **[string][2]** You must set output.dir instead of output.file when generating multiple chunks, this option will do it and keep only es format (optional, default `false`)
-    -   `options.nodeResolveOptions` **[string][2]** rollup-plugin-node-resolve options (See [https://github.com/rollup/rollup-plugin-node-resolve][3]) (optional, default `{}`)
-    -   `options.commonjsOptions` **[string][2]** rollup-plugin-commonjs options (See [https://github.com/rollup/rollup-plugin-commonjs][4]) (optional, default `{}`)
-    -   `options.replaceOptions` **[string][2]** rollup-plugin-replace options (See [https://github.com/rollup/rollup-plugin-replace][5]) (optional, default `{}`)
-    -   `options.injectOptions` **[string][2]** rollup-plugin-inject options (See [https://github.com/rollup/rollup-plugin-inject][6]) (optional, default `{}`)
-    -   `options.jsonOptions` **[string][2]** rollup-plugin-json options (See [https://github.com/rollup/rollup-plugin-json][7]) (optional, default `{}`)
-    -   `options.babelOptions` **[string][2]** rollup-plugin-babel options (See [https://github.com/rollup/rollup-plugin-babel][8]) (optional, default `{}`)
-    -   `options.cleanupOptions` **[string][2]** rollup-plugin-cleanup options (See [https://github.com/aMarCruz/rollup-plugin-cleanup][9]) (optional, default `{}`)
-    -   `options.pkgFormatsPriority` **[string][2]** Give pkg.formats priority if it exist in package.json (optional, default `{}`)
+    -   `options.multipleChunk` **[boolean][3]** You must set output.dir instead of output.file when generating multiple chunks, this option will do it and keep only es format (optional, default `false`)
+    -   `options.nodeResolveOptions` **[string][2]** rollup-plugin-node-resolve options (See [https://github.com/rollup/rollup-plugin-node-resolve][4]) (optional, default `{}`)
+    -   `options.commonjsOptions` **[object][1]** rollup-plugin-commonjs options (See [https://github.com/rollup/rollup-plugin-commonjs][5]) (optional, default `{}`)
+    -   `options.replaceOptions` **[object][1]** rollup-plugin-replace options (See [https://github.com/rollup/rollup-plugin-replace][6]) (optional, default `{}`)
+    -   `options.injectOptions` **[object][1]** rollup-plugin-inject options (See [https://github.com/rollup/rollup-plugin-inject][7]) (optional, default `{}`)
+    -   `options.jsonOptions` **[object][1]** rollup-plugin-json options (See [https://github.com/rollup/rollup-plugin-json][8]) (optional, default `{}`)
+    -   `options.babelOptions` **[object][1]** rollup-plugin-babel options (See [https://github.com/rollup/rollup-plugin-babel][9]) (optional, default `{}`)
+    -   `options.cleanupOptions` **[object][1]** rollup-plugin-cleanup options (See [https://github.com/aMarCruz/rollup-plugin-cleanup][10]) (optional, default `{}`)
+    -   `options.pkgFormatsPriority` **[object][1]** Give pkg.formats priority if it exist in package.json (user can use pkg.formats = ['umd'] to specify the output formats) (optional, default `{}`)
+
+### Examples
+
+```javascript
+const { createConfig } = require('@rollup-umd/rollup');
+const options = {}; // override any options here
+module.exports = createConfig(options);
+```
 
 Returns **any** 
 
@@ -25,16 +33,18 @@ Returns **any**
 
 [2]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String
 
-[3]: https://github.com/rollup/rollup-plugin-node-resolve
+[3]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean
 
-[4]: https://github.com/rollup/rollup-plugin-commonjs
+[4]: https://github.com/rollup/rollup-plugin-node-resolve
 
-[5]: https://github.com/rollup/rollup-plugin-replace
+[5]: https://github.com/rollup/rollup-plugin-commonjs
 
-[6]: https://github.com/rollup/rollup-plugin-inject
+[6]: https://github.com/rollup/rollup-plugin-replace
 
-[7]: https://github.com/rollup/rollup-plugin-json
+[7]: https://github.com/rollup/rollup-plugin-inject
 
-[8]: https://github.com/rollup/rollup-plugin-babel
+[8]: https://github.com/rollup/rollup-plugin-json
 
-[9]: https://github.com/aMarCruz/rollup-plugin-cleanup
+[9]: https://github.com/rollup/rollup-plugin-babel
+
+[10]: https://github.com/aMarCruz/rollup-plugin-cleanup
