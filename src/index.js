@@ -175,7 +175,6 @@ function createConfig(options = {}) {
         ],
         'react-dom': [
           'createRoot',
-          'unstable_createRoot',
           'createPortal',
           'findDOMNode',
           'hydrate',
