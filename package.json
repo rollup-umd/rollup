@@ -1,6 +1,6 @@
 {
   "name": "@rollup-umd/rollup",
-  "version": "1.0.13",
+  "version": "1.1.0",
   "description": "rollup configuration for rollup-umd",
   "main": "lib/index.js",
   "jsnext:main": "dist/@rollup-umd/rollup.esm.js",
