@@ -1,3 +1,15 @@
+# [1.1.0](https://github.com/rollup-umd/rollup/compare/v1.0.13...v1.1.0) (2019-10-10)
+
+
+### Bug Fixes
+
+* **release:** release ([f182f4a](https://github.com/rollup-umd/rollup/commit/f182f4a1a2f481728670edbb3dccb8f7f56d878a))
+
+
+### Features
+
+* **rollup:** fixing rollup dependencies in this package and upgrade all dependencies ([662fb68](https://github.com/rollup-umd/rollup/commit/662fb6801e297378bb413e54ff8936903f4e7f6f))
+
 ## [1.0.13](https://github.com/rollup-umd/rollup/compare/v1.0.12...v1.0.13) (2019-05-13)
 
 
